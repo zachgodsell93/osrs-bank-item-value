@@ -182,7 +182,7 @@ class BankItemValueOverlay extends WidgetItemOverlay
 	private long unitPrice(int itemId)
 	{
 		// getItemPrice resolves noted items to their unnoted counterpart itself
-		final int gePrice = priceSource == PriceSource.HIGH_ALCHEMY ? 0 : itemManager.getItemPrice(itemId);
+		final long gePrice = priceSource == PriceSource.HIGH_ALCHEMY ? 0 : itemManager.getItemPrice(itemId);
 
 		int haPrice = 0;
 		if (priceSource != PriceSource.GRAND_EXCHANGE)
